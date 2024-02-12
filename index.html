@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Capital Calculator</title>
+	</head>
+	<body>
+		<header>
+			<h1>Capital Calculator</h1>
+		</header>
+		<main class="main">
+			<div class="capital-form__wrapper">
+				<form class="capital-form__form" id="capitalForm">
+					<div class="capital-form">
+						<label for="salary">Salary:</label>
+						<input type="number" name="salary" min="0" id="salary" required />
+
+						<label for="expenses">Expenses:</label>
+						<input
+							type="number"
+							name="expenses"
+							min="0"
+							id="expenses"
+							required
+						/>
+					</div>
+					<button type="button" onclick="calculateCapital()">Calculate</button>
+				</form>
+			</div>
+			<div class="result__wrapper">
+				<div class="result">
+					<div id="totalResult"></div>
+					<button type="button" id="editButton" onclick="editResult()">
+						Edit Result
+					</button>
+				</div>
+			</div>
+		</main>
+
+		<script src="./js/index.js"></script>
+	</body>
+</html>
