@@ -35,6 +35,7 @@ label {
 		background: transparent;
 		border: 1px solid #ccc;
 		border-radius: 4px;
+		transition: all 0.3s ease 0s;
 		&:hover {
 			border: 1px solid #999;
 		}
