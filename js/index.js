@@ -48,7 +48,7 @@ function updateHistory() {
 		totalResult - history !== 0
 			? totalResult > history
 				? `+${totalResult - history} 📈`
-				: `${history - totalResult} 📉`
+				: `-${history - totalResult} 📉`
 			: "";
 
 	totalResultElement.innerHTML = `Total Result: <span>${totalResult}</span> ${changeIndicator}`;
